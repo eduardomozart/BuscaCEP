@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+
 #loadingOverlay {
   /* As linhas abaixo garantem que o elemento ocupe 100% do espaço da tela */
   position: fixed;
@@ -15,4 +17,41 @@
     /* Aumenta o tamanho do spinner */
     width: 100px;
     height: 100px;
+}
+
+body {
+  /* Altera a cor de fundo da página */
+  background-color: green;
+}
+
+h1 {
+  /* Altera a fonte de título */
+  font-family: "BBH Sans Bartle";
+}
+
+input[type="text"], select {
+  /* Altera a cor de fundo dos campos de texto (input)
+     e seletor de 'Estados' (select) */
+  /* 'Important' é necessário para forçar a substituição
+      das cores do seletor de 'Estados' (select) */
+    background-color: blue !important;
+    border: 1px solid purple !important;
+    color: pink !important;
+}
+
+input[type="text"]:disabled, select:disabled {
+  /* Altera o estilo dos campos desabilitados */
+    background-color: blue !important;
+    border: 1px solid purple !important;
+    color: pink !important;
+}
+
+input[type="text"]::placeholder {
+  /* Altera a cor do texto de campos que não possuem informações preenchidas. */
+  color: whitesmoke;
+}
+
+label {
+  /* Altera a cor do rótulo dos campos */
+  color: orange;
 }
